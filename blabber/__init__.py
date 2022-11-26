@@ -1,6 +1,6 @@
 """Blabber generates conversation starters."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 import random
 from pathlib import Path
@@ -11,7 +11,7 @@ class StarterGenerator:
         """Resets the generator's internal starter queue."""
 
         self.starters = random.sample(
-            self.original_starters, len(self.original_starters)
+            list(self.original_starters), len(self.original_starters)
         )
 
     def __init__(self):
