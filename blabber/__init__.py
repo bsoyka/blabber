@@ -36,3 +36,8 @@ class StarterGenerator:
 
         # Get a random starter while also removing it from the queue
         return self.starters.pop()
+
+def starter():
+    """Gets a fresh starter without caring about repeats."""
+
+    return StarterGenerator().starter()
