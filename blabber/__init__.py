@@ -11,7 +11,7 @@ class StarterGenerator:
         """Resets the generator's internal starter queue."""
 
         self.starters = random.sample(
-            self.original_starters, len(self.original_starters)
+            list(self.original_starters), len(self.original_starters)
         )
 
     def __init__(self):
