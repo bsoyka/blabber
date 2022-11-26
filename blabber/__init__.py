@@ -1,6 +1,6 @@
 """Blabber generates conversation starters."""
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 import random
 from pathlib import Path
